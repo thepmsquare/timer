@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+#timerContainer {
+  display: grid;
+  font-size: 3rem;
+  font-family: "Roboto Mono";
+  text-align: center;
+  padding: 2rem;
+  border: 2px solid black;
+  background: #00ff00;
+}
+#durationInput {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  font-size: inherit;
+  font-family: inherit;
+  border: inherit;
+  text-align: inherit;
+  cursor: default;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  border: 2px solid black;
+}
+#playButton {
+  grid-row: 2;
+  grid-column: 1;
+  cursor: default;
+}
+#stopButton {
+  grid-row: 2;
+  grid-column: 1;
+  cursor: default;
+  display: none;
+}
+#pauseButton {
+  grid-row: 2;
+  grid-column: 2;
+  cursor: default;
+}
